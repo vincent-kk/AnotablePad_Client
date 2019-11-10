@@ -4,17 +4,14 @@
     <e p="C:\Users\Lunox\.Rider2019.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Lunox\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_AnotablePad_Client.-803710782.00" t="ExcludeRecursive" />
     <e p="C:\Users\Lunox\UnityProjects\AnotablePad_Client" t="IncludeRecursive">
+      <e p=".git\info\exclude" t="IncludeRecursive" />
       <e p="AnotablePad_Client.sln" t="IncludeFlat" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="FreeDraw" t="Include">
-          <e p="Scripts" t="Include">
-            <e p="Drawable.cs" t="Include" />
-            <e p="DrawingSettings.cs" t="Include" />
-          </e>
-        </e>
         <e p="Script" t="Include">
+          <e p="Drawable.cs" t="Include" />
           <e p="DrawingManage.cs" t="Include" />
+          <e p="DrawingSettings.cs" t="Include" />
           <e p="NetworkEventType.cs" t="Include" />
           <e p="NetworkManager.cs" t="Include" />
           <e p="OnTouchDraw.cs" t="Include" />
