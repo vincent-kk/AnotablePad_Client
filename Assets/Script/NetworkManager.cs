@@ -8,13 +8,15 @@ using UnityEngine.UI;
 
 public class NetworkManager : MonoBehaviour
 {
-    [SerializeField] private InputField serverIP = null;
+    [SerializeField] private InputField serverIp = null;
     [SerializeField] private InputField serverPort = null;
-    [SerializeField] private TextMeshProUGUI console = null;
 
-    [SerializeField] private InputField message;
+    [SerializeField] private ApplicationManager app;
+
 
     public int bufferSize = 1024;
+    private readonly string _delimiter = "|";
+
 
     private byte[] _receiveBuffer;
 
@@ -55,39 +57,41 @@ public class NetworkManager : MonoBehaviour
 
     public void ConnectToServer()
     {
-        var ip = serverIP.text;
+        var ip = serverIp.text;
         var port = Convert.ToInt32(serverPort.text);
 
         Debug.Log("server : " + ip + " : " + port);
 
-        serverIP.text = "";
+        serverIp.text = "";
         serverPort.text = "";
 
-        ConsoleLogger("Try to Connect : " + ip + " : " + port);
-
-        TcpConnection(ip, port);
+        if (TcpConnection(ip, port))
+        {
+            Send("#Tablet");
+            app.ChangeView("selectHost");
+        }
+        else
+        {
+            ConsoleLogger("Fail To Connect Server");
+        }
     }
 
-    private void TcpConnection(string serverIp, int port)
+    private bool TcpConnection(string serverIp, int port)
     {
         var ret = _tcpManager.Connect(serverIp, port);
         _state = ret ? ChatState.CONNECTION : ChatState.ERROR;
+        return ret;
     }
 
-    public void Send()
+    public void Send(string msg)
     {
-        var dataToSend = "client [" + DateTime.Now.ToString("HH:mm:ss") + "] : " + message.text;
-        
-        message.text = "";
-
-        var buffer = System.Text.Encoding.UTF8.GetBytes(dataToSend);
-
+        msg += _delimiter;
+        var buffer = System.Text.Encoding.UTF8.GetBytes(msg);
         _tcpManager.Send(buffer, buffer.Length);
-
-        ConsoleLogger(dataToSend);
+        ConsoleLogger(msg);
     }
 
-    private void Receive()
+    public void Receive()
     {
         var returnData = new byte[bufferSize];
 
@@ -103,14 +107,6 @@ public class NetworkManager : MonoBehaviour
 
     private void ConsoleLogger(string log)
     {
-        if (console.text == "")
-            console.text = log;
-        else
-        {
-            string temp = console.text;
-            temp += "\n" + log;
-            console.text = temp;
-        }
         Debug.Log(log);
     }
 

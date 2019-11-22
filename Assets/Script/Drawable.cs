@@ -12,7 +12,9 @@ namespace FreeDraw
     // 4. Hold down left mouse to draw on this texture!
     public class Drawable : MonoBehaviour
     {
-        public bool NowDrawing;
+        [SerializeField] private ApplicationManager _appicationManager;
+
+        private bool _nowDrawing;
 
         // PEN COLOUR
         public static Color Pen_Colour = Color.red; // Change these to change the default drawing settings
@@ -121,7 +123,7 @@ namespace FreeDraw
 
             ApplyMarkedPixelChanges();
 
-            Debug.Log(pixel_pos);
+            SendCoordinateData(pixel_pos);
 //            Debug.Log("Dimensions: " + pixelWidth + "," + pixelHeight + ". Units to pixels: " + unitsToPixels + ". Pixel pos: " + pixel_pos);
             previous_drag_position = pixel_pos;
         }
@@ -141,7 +143,7 @@ namespace FreeDraw
         // Detects when user is left clicking, which then call the appropriate function
         void Update()
         {
-            if (!NowDrawing) return;
+            if (!_nowDrawing) return;
             // Is the user holding down the left mouse button?
             bool mouse_held_down = Input.GetMouseButton(0);
             if (mouse_held_down && !no_drawing_on_current_drag)
@@ -292,10 +294,22 @@ namespace FreeDraw
             drawable_texture.Apply();
         }
 
+        public void SetNewDrawing(bool drawing)
+        {
+            if (_nowDrawing != drawing) ResetCanvas();
+            this._nowDrawing = drawing;
+        }
+
+        private void SendCoordinateData(Vector2 data)
+        {
+            Debug.Log(data.ToString());
+            _appicationManager.SendCoordinateData(data);
+        }
+
 
         void Awake()
         {
-            NowDrawing = false;
+            _nowDrawing = false;
             drawable = this;
             // DEFAULT BRUSH SET HERE
             current_brush = PenBrush;
