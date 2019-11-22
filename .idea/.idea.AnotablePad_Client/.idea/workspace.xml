@@ -4,10 +4,537 @@
     <list default="true" id="d77dc767-3e2b-433f-93cc-c409e567e6c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Drawable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Drawable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Button.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Button.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Button.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Button.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Checkmark.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Checkmark.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Checkmark.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Checkmark.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Logo.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Logo.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Logo.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Logo.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Window - Back.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Window - Back.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Window - Back.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Window - Back.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Window - Forward.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Window - Forward.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Window - Forward.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Animations/Window - Forward.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Fantasy.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Fantasy.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Fantasy/Fantasy Atlas.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Fantasy/Fantasy Atlas.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Fantasy/Fantasy Atlas.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Fantasy/Fantasy Atlas.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Fantasy/Fantasy Atlas.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Fantasy/Fantasy Atlas.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Fantasy/Fantasy Atlas.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Fantasy/Fantasy Atlas.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Fantasy/Fantasy Font - Normal.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Fantasy/Fantasy Font - Normal.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Fantasy/Fantasy Font - Normal.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Fantasy/Fantasy Font - Normal.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Atlas - Bump.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Atlas - Bump.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Atlas - Masks.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Atlas - Masks.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Atlas.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Atlas.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Atlas.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Atlas.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Atlas.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Atlas.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Atlas.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Atlas.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Font - Header.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Font - Header.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Font - Header.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Font - Header.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Font - Normal.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Font - Normal.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Font - Normal.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Refractive/Refractive Font - Normal.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi/SciFi Atlas.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi/SciFi Atlas.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi/SciFi Atlas.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi/SciFi Atlas.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi/SciFi Atlas.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi/SciFi Atlas.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi/SciFi Atlas.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi/SciFi Atlas.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi/SciFi Font - Header.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi/SciFi Font - Header.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi/SciFi Font - Header.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi/SciFi Font - Header.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi/SciFi Font - Normal.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi/SciFi Font - Normal.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi/SciFi Font - Normal.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi/SciFi Font - Normal.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Arimo14.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Arimo14.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Arimo14.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Arimo14.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Arimo14.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Arimo14.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Arimo18.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Arimo18.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Arimo18.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Arimo18.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Arimo18.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Arimo18.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Arimo20.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Arimo20.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Arimo20.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Arimo20.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Arimo20.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Arimo20.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Wooden Atlas.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Wooden Atlas.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Wooden Atlas.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Wooden Atlas.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Wooden Atlas.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Wooden Atlas.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Wooden Atlas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Wooden Atlas.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Wooden Atlas.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Wooden Atlas.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Materials/Backdrop.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Materials/Backdrop.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Materials/Backdrop.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Materials/Backdrop.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Materials/brick.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Materials/brick.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Materials/brick.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Materials/brick.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Materials/burlap.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Materials/burlap.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Materials/burlap.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Materials/burlap.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Materials/sand.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Materials/sand.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Materials/sand.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Materials/sand.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Bracers.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Bracers.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Armor (Diffuse).psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Armor (Diffuse).psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Armor (Maps).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Armor (Maps).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Armor (Normal).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Armor (Normal).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Armor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Armor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Armor.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Armor.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Armor.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Armor.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Armor.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Armor.shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Bracers.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Bracers.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Bracers.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Bracers.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Shoulders.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Shoulders.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Shoulders.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Orc Shoulders.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Shoulders.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc Armor/Shoulders.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/FBX.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/FBX.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/FBX@idle.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/FBX@idle.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/FBX@idleBreaks.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/FBX@idleBreaks.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/Orc Skin (Diffuse).psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/Orc Skin (Diffuse).psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/Orc Skin (Normal).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/Orc Skin (Normal).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/Orc Skin.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/Orc Skin.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/Orc Skin.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/Orc Skin.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/Orc Skin.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/Orc Skin.shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/Orc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/Orc.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/Orc.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Models/Orc/Orc.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Other.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Other.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Other/English.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Other/English.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Other/French.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Other/French.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Other/Localization.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Other/Localization.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Other/Storage Icon Template.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Other/Storage Icon Template.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Other/Storage Icon Template.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Other/Storage Icon Template.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 1 - UIAnchor.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 1 - UIAnchor.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 10 - Localization.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 10 - Localization.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 10 - Localization.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 10 - Localization.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 11 - Drag &amp; Drop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 11 - Drag &amp; Drop.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 11 - Drag &amp; Drop.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 11 - Drag &amp; Drop.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 12 - Chat Window.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 12 - Chat Window.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 12 - Chat Window.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 12 - Chat Window.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 13 - Tabs.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 13 - Tabs.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 13 - Tabs.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 13 - Tabs.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 2 - Interaction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 2 - Interaction.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 2 - Interaction.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 2 - Interaction.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 3 - Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 3 - Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 3 - Menu.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 3 - Menu.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 4 - Controller Input.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 4 - Controller Input.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 4 - Controller Input.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 4 - Controller Input.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 5 - Lights and Refraction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 5 - Lights and Refraction.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 5 - Lights and Refraction.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 5 - Lights and Refraction.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 6 - Draggable Window.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 6 - Draggable Window.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 6 - Draggable Window.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 6 - Draggable Window.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 7 - Scroll View (Panel).unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 7 - Scroll View (Panel).unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 7 - Scroll View (Panel).unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 7 - Scroll View (Panel).unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 8 - Scroll View (Camera).unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 8 - Scroll View (Camera).unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 8 - Scroll View (Camera).unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 8 - Scroll View (Camera).unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 9 - Quest Log.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 9 - Quest Log.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 9 - Quest Log.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example 9 - Quest Log.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example X - Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example X - Character.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example X - Character.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Example X - Character.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 1 - Scene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 1 - Scene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 10 - 3D.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 10 - 3D.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 11 - Popup List.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 11 - Popup List.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 2 - Sprite.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 2 - Sprite.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 3 - Sliced Sprite.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 3 - Sliced Sprite.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 4 - Tiled Sprite.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 4 - Tiled Sprite.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 5 - Label.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 5 - Label.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 6 - Button.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 6 - Button.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 7 - Slider.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 7 - Slider.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 8 - Checkbox.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 8 - Checkbox.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 9 - Input.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial 9 - Input.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial X - Video.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scenes/Tutorial X - Video.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Editor/InvDatabaseInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Editor/InvDatabaseInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Editor/InvDatabaseInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Editor/InvDatabaseInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Editor/InvFindItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Editor/InvFindItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Editor/InvFindItem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Editor/InvFindItem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/EquipItems.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/EquipItems.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/EquipItems.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/EquipItems.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/EquipRandomItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/EquipRandomItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/EquipRandomItem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/EquipRandomItem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UICursor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UICursor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UICursor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UICursor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIEquipmentSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIEquipmentSlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIEquipmentSlot.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIEquipmentSlot.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIItemSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIItemSlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIItemSlot.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIItemSlot.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIItemStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIItemStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIItemStorage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIItemStorage.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIStorageSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIStorageSlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIStorageSlot.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIStorageSlot.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System/InvAttachmentPoint.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System/InvAttachmentPoint.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System/InvBaseItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System/InvBaseItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System/InvBaseItem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System/InvBaseItem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System/InvDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System/InvDatabase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System/InvDatabase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System/InvDatabase.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System/InvEquipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System/InvEquipment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System/InvEquipment.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System/InvEquipment.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System/InvGameItem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System/InvGameItem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System/InvStat.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/InventorySystem/System/InvStat.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/ChatInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/ChatInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/ChatInput.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/ChatInput.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/DownloadTexture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/DownloadTexture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/DownloadTexture.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/DownloadTexture.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/DragDropContainer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/DragDropContainer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/DragDropItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/DragDropItem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/DragDropRoot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/DragDropRoot.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/DragDropSurface.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/DragDropSurface.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/LagPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/LagPosition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/LagPosition.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/LagPosition.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/LagRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/LagRotation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/LagRotation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/LagRotation.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/LoadLevelOnClick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/LoadLevelOnClick.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/LoadLevelOnClick.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/LoadLevelOnClick.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/LookAtTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/LookAtTarget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/LookAtTarget.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/LookAtTarget.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/PanWithMouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/PanWithMouse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/PanWithMouse.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/PanWithMouse.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/PlayIdleAnimations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/PlayIdleAnimations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/PlayIdleAnimations.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/PlayIdleAnimations.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/SetColorOnSelection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/SetColorOnSelection.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/ShaderQuality.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/ShaderQuality.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/Spin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/Spin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/Spin.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/Spin.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/SpinWithMouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/SpinWithMouse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/SpinWithMouse.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/SpinWithMouse.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/TypewriterEffect.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/TypewriterEffect.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/UpdateManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/UpdateManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/WindowAutoYaw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/WindowAutoYaw.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/WindowAutoYaw.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/WindowAutoYaw.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/WindowDragTilt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/WindowDragTilt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/WindowDragTilt.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Scripts/Other/WindowDragTilt.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Shaders.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Shaders.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Shaders/Refractive.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Shaders/Refractive.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Shaders/Refractive.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Shaders/Refractive.shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Sounds.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Sounds.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Sounds/Crumple.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Sounds/Crumple.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Sounds/Rumble.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Sounds/Rumble.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Sounds/Swipe.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Sounds/Swipe.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Sounds/Tap.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Sounds/Tap.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Textures.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Textures/Backdrop.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Textures/Backdrop.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Textures/brick.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Textures/brick.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Textures/brickNM.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Textures/brickNM.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Textures/burlap.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Textures/burlap.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Textures/sand.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Textures/sand.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/ReadMe - 2.7.0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/ReadMe - 2.7.0.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Resources.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/GUI - Text Shader (AlphaClip).shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/GUI - Text Shader (AlphaClip).shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/GUI - Text Shader (SoftClip).shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/GUI - Text Shader (SoftClip).shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Additive Colored.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Additive Colored.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Depth Cutout.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Depth Cutout.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Depth.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Depth.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Dynamic Font (AlphaClip).shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Dynamic Font (AlphaClip).shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Dynamic Font (SoftClip).shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Dynamic Font (SoftClip).shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Dynamic Font.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Dynamic Font.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Masked Colored.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Masked Colored.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Premultiplied Colored (AlphaClip).shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Premultiplied Colored (AlphaClip).shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Premultiplied Colored (SoftClip).shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Premultiplied Colored (SoftClip).shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Premultiplied Colored.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Premultiplied Colored.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Premultiplied Colored.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Premultiplied Colored.shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored (AlphaClip).shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored (AlphaClip).shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored (Packed) (AlphaClip) .shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored (Packed) (AlphaClip) .shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored (Packed) (SoftClip).shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored (Packed) (SoftClip).shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored (Packed).shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored (Packed).shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored (SoftClip).shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored (SoftClip).shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored.shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/BMFontReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/BMFontReader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/BMFontReader.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/BMFontReader.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/ComponentSelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/ComponentSelector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/ComponentSelector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/ComponentSelector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUIEditorTools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUIEditorTools.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUIEditorTools.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUIEditorTools.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUIJson.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUIJson.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUIJson.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUIJson.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUIMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUIMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUIMenu.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUIMenu.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUISelectionTools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUISelectionTools.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUISelectionTools.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUISelectionTools.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUISettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUISettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUISettings.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUISettings.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUITransformInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUITransformInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUITransformInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/NGUITransformInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/SpriteSelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/SpriteSelector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/SpriteSelector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/SpriteSelector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIAtlasInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIAtlasInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIAtlasInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIAtlasInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIAtlasMaker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIAtlasMaker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIAtlasMaker.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIAtlasMaker.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UICameraTool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UICameraTool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UICameraTool.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UICameraTool.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UICreateNewUIWizard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UICreateNewUIWizard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UICreateNewUIWizard.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UICreateNewUIWizard.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UICreateWidgetWizard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UICreateWidgetWizard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UICreateWidgetWizard.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UICreateWidgetWizard.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIDrawCallInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIDrawCallInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIDrawCallInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIDrawCallInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIFilledSpriteInspector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIFilledSpriteInspector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIFontInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIFontInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIFontInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIFontInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIFontMaker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIFontMaker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIFontMaker.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIFontMaker.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIImageButtonInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIImageButtonInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIImageButtonInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIImageButtonInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UILabelInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UILabelInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UILabelInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UILabelInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIPanelInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIPanelInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIPanelInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIPanelInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIPanelTool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIPanelTool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIPanelTool.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIPanelTool.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIPopupListInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIPopupListInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIPopupListInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIPopupListInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIScrollBarInspector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIScrollBarInspector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UISlicedSpriteInspector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UISlicedSpriteInspector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UISliderInspector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UISliderInspector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UISpriteAnimationInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UISpriteAnimationInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UISpriteAnimationInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UISpriteAnimationInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UISpriteInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UISpriteInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UISpriteInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UISpriteInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UITextureInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UITextureInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UITextureInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UITextureInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UITexturePacker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UITexturePacker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UITexturePacker.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UITexturePacker.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UITiledSpriteInspector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UITiledSpriteInspector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIWidgetInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIWidgetInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIWidgetInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Editor/UIWidgetInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/LanguageSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/LanguageSelection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/LanguageSelection.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/LanguageSelection.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonActivate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonActivate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonActivate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonActivate.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonColor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonColor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonColor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonColor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonKeyBinding.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonKeyBinding.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonKeys.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonKeys.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonKeys.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonKeys.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonMessage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonMessage.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonOffset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonOffset.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonOffset.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonOffset.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonPlayAnimation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonPlayAnimation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonRotation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonRotation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonRotation.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonScale.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonScale.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonScale.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonScale.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonSound.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonSound.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonTween.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIButtonTween.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UICenterOnChild.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UICenterOnChild.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UICenterOnChild.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UICenterOnChild.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UICheckbox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UICheckbox.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UICheckboxControlledComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UICheckboxControlledComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UICheckboxControlledObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UICheckboxControlledObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIDragCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIDragCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIDragCamera.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIDragCamera.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIDragObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIDragObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIDragObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIDragObject.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIDragPanelContents.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIDragPanelContents.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIDraggableCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIDraggableCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIDraggableCamera.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIDraggableCamera.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIDraggablePanel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIDraggablePanel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIForwardEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIForwardEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIForwardEvents.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIForwardEvents.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIGrid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIGrid.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIGrid.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIImageButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIImageButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIImageButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIImageButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIInputValidator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIInputValidator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIPopupList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIPopupList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIPopupList.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIPopupList.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UISavedOption.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UISavedOption.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UISavedOption.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UISavedOption.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIScrollBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIScrollBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIScrollBar.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UIScrollBar.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UISlider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UISlider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UISlider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UISlider.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UISliderColors.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UISliderColors.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UISoundVolume.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UISoundVolume.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UISoundVolume.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UISoundVolume.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UITable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UITable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UITable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Interaction/UITable.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/ActiveAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/ActiveAnimation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/ActiveAnimation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/ActiveAnimation.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/AnimationOrTween.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/AnimationOrTween.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/AnimationOrTween.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/AnimationOrTween.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/BMFont.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/BMFont.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/BMFont.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/BMFont.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/BMGlyph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/BMGlyph.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/BMGlyph.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/BMGlyph.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/BMSymbol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/BMSymbol.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/BMSymbol.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/BMSymbol.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/BetterList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/BetterList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/BetterList.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/BetterList.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/ByteReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/ByteReader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/ByteReader.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/ByteReader.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/IgnoreTimeScale.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/IgnoreTimeScale.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/Localization.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/Localization.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/Localization.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/Localization.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/NGUIDebug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/NGUIDebug.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/NGUIDebug.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/NGUIDebug.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/NGUIMath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/NGUIMath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/NGUIMath.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/NGUIMath.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/NGUITools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/NGUITools.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/NGUITools.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/NGUITools.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/SpringPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/SpringPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/SpringPanel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/SpringPanel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/UIDrawCall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/UIDrawCall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/UIDrawCall.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/UIDrawCall.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/UIEventListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/UIEventListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/UIEventListener.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/UIEventListener.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/UIGeometry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/UIGeometry.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/UIGeometry.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/UIGeometry.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/UINode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/UINode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/UIWidget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/UIWidget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/UIWidget.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/UIWidget.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/AnimatedAlpha.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/AnimatedAlpha.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/AnimatedAlpha.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/AnimatedAlpha.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/AnimatedColor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/AnimatedColor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/AnimatedColor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/AnimatedColor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/SpringPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/SpringPosition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/SpringPosition.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/SpringPosition.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenAlpha.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenAlpha.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenAlpha.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenAlpha.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenColor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenColor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenColor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenColor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenFOV.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenFOV.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenFOV.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenFOV.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenOrthoSize.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenOrthoSize.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenOrthoSize.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenOrthoSize.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenPosition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenPosition.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenPosition.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenRotation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenRotation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenRotation.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenScale.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenScale.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenScale.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenScale.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenTransform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenTransform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenTransform.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenTransform.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenVolume.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenVolume.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenVolume.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/TweenVolume.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/UITweener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/UITweener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/UITweener.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/Tweening/UITweener.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIAnchor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIAnchor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIAnchor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIAnchor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIAtlas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIAtlas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIAtlas.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIAtlas.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UICamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UICamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UICamera.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UICamera.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIFilledSprite.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIFilledSprite.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIFont.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIFont.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIFont.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIFont.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIInput.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIInput.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIInputSaved.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIInputSaved.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UILabel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UILabel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UILabel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UILabel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UILocalize.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UILocalize.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UILocalize.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UILocalize.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIOrthoCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIOrthoCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIOrthoCamera.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIOrthoCamera.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIPanel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIPanel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIRoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIRoot.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIRoot.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UISlicedSprite.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UISlicedSprite.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UISprite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UISprite.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UISprite.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UISprite.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UISpriteAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UISpriteAnimation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UISpriteAnimation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UISpriteAnimation.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIStretch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIStretch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIStretch.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIStretch.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UITextList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UITextList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UITextList.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UITextList.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UITexture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UITexture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UITexture.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UITexture.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UITiledSprite.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UITiledSprite.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UITooltip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UITooltip.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UITooltip.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UITooltip.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIViewport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIViewport.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIViewport.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIViewport.cs.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +562,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/FreeDraw/Art/BlueMarker.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Drawable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Runtime/Unity.TextMeshPro.asmdef" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/ActiveAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/NGUITools.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
