@@ -111,6 +111,7 @@ public class NetworkManager : MonoBehaviour
             temp += "\n" + log;
             console.text = temp;
         }
+        Debug.Log(log);
     }
 
     private void OnApplicationQuit()
