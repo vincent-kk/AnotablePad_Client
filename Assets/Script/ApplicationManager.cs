@@ -15,6 +15,11 @@ public class ApplicationManager : MonoBehaviour
     private readonly char _clientCommand = '#';
     private readonly char _serverCommand = '@';
     private readonly string _color = "CC->";
+    private readonly string _background = "BG->";
+
+    private readonly int resolutionX = 1080;
+    private readonly int resolutionY = 1920;
+
 
     private readonly Dictionary<string, int> _viewName = new Dictionary<string, int>(3)
     {
@@ -44,7 +49,8 @@ public class ApplicationManager : MonoBehaviour
 
     public void SendCoordinateData(Vector2 data)
     {
-        var msg = data.x + "," + data.y;
+        //var msg = (Math.Round((data.x / resolutionX), 4) + "," + Math.Round((data.y / resolutionY), 4));
+        var msg = (data.x + "," + data.y);
         _networkManager.Send(msg);
     }
 
@@ -57,6 +63,12 @@ public class ApplicationManager : MonoBehaviour
     public void SetMarkerColor(string color)
     {
         SendCommendSignal(_color + color);
+    }
+
+    public void ClearCanvas()
+    {
+        _drawable.ResetCanvas();
+        SendCommendSignal(_background + "CLEAR");
     }
 
     public char GetDelimiter()
