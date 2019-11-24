@@ -177,6 +177,7 @@ namespace FreeDraw
             {
                 previous_drag_position = Vector2.zero;
                 no_drawing_on_current_drag = false;
+                _appicationManager.SendReleasedSignal();
             }
 
             mouse_was_previously_held_down = mouse_held_down;
@@ -302,7 +303,6 @@ namespace FreeDraw
 
         private void SendCoordinateData(Vector2 data)
         {
-            Debug.Log(data.ToString());
             _appicationManager.SendCoordinateData(data);
         }
 

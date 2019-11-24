@@ -23,13 +23,14 @@ public class NetworkManager : MonoBehaviour
     private TcpManager _tcpManager = null;
     private Encoding _encode;
 
-    private static ChatState _state = ChatState.HOST_TYPE_SELECT;
+    private static State _state = State.CONNECTION;
 
-    enum ChatState
+    enum State
     {
-        HOST_TYPE_SELECT = 0, // 방 선택.
-        CONNECTION, // 연결.
-        LEAVE, // 나가기.
+        CONNECTION, // 연결 준비
+        MENU, //메뉴 화면
+        ROOM, //방에서 대기중
+        DRAW, //실제로 그리는중
         ERROR, // 오류.
     };
 
@@ -45,12 +46,11 @@ public class NetworkManager : MonoBehaviour
     {
         switch (_state)
         {
-            case ChatState.HOST_TYPE_SELECT:
+            case State.CONNECTION:
                 break;
-            case ChatState.CONNECTION:
-                Receive();
+            case State.DRAW:
                 break;
-            case ChatState.LEAVE:
+            case State.ERROR:
                 break;
         }
     }
@@ -65,10 +65,25 @@ public class NetworkManager : MonoBehaviour
         serverIp.text = "";
         serverPort.text = "";
 
+
         if (TcpConnection(ip, port))
         {
-            Send("#Tablet");
-            app.ChangeView("selectHost");
+            Send("@Tablet");
+            var returnData = new byte[64];
+            var recvSize = _tcpManager.BlockingReceive(ref returnData, returnData.Length);
+            if (recvSize > 0)
+            {
+                var msg = Encoding.UTF8.GetString(returnData).TrimEnd('\0');
+                if (msg.Equals("@CONNECTION"))
+                {
+                    _state = State.DRAW;
+                    app.ChangeView("draw");
+                }
+                else
+                {
+                    ConsoleLogger("Fail To Connect Server");
+                }
+            }
         }
         else
         {
@@ -78,9 +93,7 @@ public class NetworkManager : MonoBehaviour
 
     private bool TcpConnection(string serverIp, int port)
     {
-        var ret = _tcpManager.Connect(serverIp, port);
-        _state = ret ? ChatState.CONNECTION : ChatState.ERROR;
-        return ret;
+        return _tcpManager.Connect(serverIp, port);
     }
 
     public void Send(string msg)
@@ -91,18 +104,18 @@ public class NetworkManager : MonoBehaviour
         ConsoleLogger(msg);
     }
 
-    public void Receive()
+    public string Receive()
     {
         var returnData = new byte[bufferSize];
-
         var recvSize = _tcpManager.Receive(ref returnData, returnData.Length);
-
         if (recvSize > 0)
         {
             var msg = System.Text.Encoding.UTF8.GetString(returnData);
-            msg = "server " + msg;
             ConsoleLogger(msg);
+            return msg;
         }
+
+        return null;
     }
 
     private void ConsoleLogger(string log)

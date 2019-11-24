@@ -13,14 +13,14 @@ public class ApplicationManager : MonoBehaviour
 
     private readonly Dictionary<string, int> _viewName = new Dictionary<string, int>(3)
     {
-        {"findServer", 0},
-        {"selectHost", 1},
-        {"notepad", 2}
+        {"connect", 0},
+        {"select", 1},
+        {"draw", 2}
     };
 
     private void Start()
     {
-        ChangeView("findServer");
+        ChangeView("connect");
     }
 
     public void ChangeView(string view)
@@ -43,6 +43,13 @@ public class ApplicationManager : MonoBehaviour
 
     public void SendCoordinateData(Vector2 data)
     {
-        _networkManager.Send(data.ToString());
+        var msg = data.x + "," + data.y;
+        _networkManager.Send(msg);
+    }
+
+    public void SendReleasedSignal()
+    {
+        var msg = "#EOF";
+        _networkManager.Send(msg);
     }
 }
