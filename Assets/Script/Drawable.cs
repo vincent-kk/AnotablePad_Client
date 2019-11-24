@@ -17,7 +17,7 @@ namespace FreeDraw
         private bool _nowDrawing;
 
         // PEN COLOUR
-        public static Color Pen_Colour = Color.red; // Change these to change the default drawing settings
+        public static Color Pen_Colour = Color.black; // Change these to change the default drawing settings
 
         // PEN WIDTH (actually, it's a radius, in pixels)
         public static int Pen_Width = 3;
@@ -121,10 +121,8 @@ namespace FreeDraw
                 ColourBetween(previous_drag_position, pixel_pos, Pen_Width, Pen_Colour);
             }
 
-            ApplyMarkedPixelChanges();
-
             SendCoordinateData(pixel_pos);
-//            Debug.Log("Dimensions: " + pixelWidth + "," + pixelHeight + ". Units to pixels: " + unitsToPixels + ". Pixel pos: " + pixel_pos);
+            ApplyMarkedPixelChanges();
             previous_drag_position = pixel_pos;
         }
 
@@ -177,7 +175,8 @@ namespace FreeDraw
             {
                 previous_drag_position = Vector2.zero;
                 no_drawing_on_current_drag = false;
-                _appicationManager.SendReleasedSignal();
+                if (mouse_was_previously_held_down)
+                    _appicationManager.SendCommendSignal("EOL");
             }
 
             mouse_was_previously_held_down = mouse_held_down;

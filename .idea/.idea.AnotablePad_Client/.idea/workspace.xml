@@ -3,27 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d77dc767-3e2b-433f-93cc-c409e567e6c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FreeDraw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FreeDraw/Art.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FreeDraw/Art/BlueMarker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FreeDraw/Art/BlueMarker.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FreeDraw/Art/Eraser.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FreeDraw/Art/Eraser.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FreeDraw/Art/GreenMarker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FreeDraw/Art/GreenMarker.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FreeDraw/Art/ReadWriteEnabledImage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FreeDraw/Art/ReadWriteEnabledImage.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FreeDraw/Art/RedMarker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FreeDraw/Art/RedMarker.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FreeDraw/ExampleDrawingScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FreeDraw/ExampleDrawingScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FreeDraw/README.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FreeDraw/README.pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FreeDraw/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/ApplicationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ApplicationManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Drawable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Drawable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/DrawingSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/DrawingSettings.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/TcpManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/TcpManager.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +46,6 @@
         <option value="$PROJECT_DIR$/Assets/FreeDraw/Scripts/DrawingSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/FreeDraw/Scripts/Drawable.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/DrawingManage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/DrawingSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/NGUI/Scripts/Internal/NGUITools.cs" />
         <option value="$PROJECT_DIR$/Assets/NGUI/Scripts/UI/UIAnchor.cs" />
@@ -71,6 +54,7 @@
         <option value="$PROJECT_DIR$/Assets/StarlinkUI/Scripts/Generic/Misc/Music.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/TcpManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/DrawingSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/ApplicationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Drawable.cs" />
       </list>
@@ -139,7 +123,7 @@
       <workItem from="1574420645147" duration="930000" />
       <workItem from="1574430614704" duration="296000" />
       <workItem from="1574438815478" duration="7329000" />
-      <workItem from="1574587631815" duration="6845000" />
+      <workItem from="1574587631815" duration="11068000" />
     </task>
     <servers />
   </component>
@@ -174,97 +158,6 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Script/NetworkManager.cs</url>
-          <line>76</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" initialLine="76">
-            <startOffsets>
-              <option value="1753" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1782" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Script/NetworkManager.cs</url>
-          <line>75</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" initialLine="75">
-            <startOffsets>
-              <option value="1676" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1736" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Script/NetworkManager.cs</url>
-          <line>89</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" initialLine="88">
-            <startOffsets>
-              <option value="2082" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2122" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Script/NetworkManager.cs</url>
-          <line>83</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" initialLine="82">
-            <startOffsets>
-              <option value="1964" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2004" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Script/NetworkManager.cs</url>
-          <line>71</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" initialLine="71">
-            <startOffsets>
-              <option value="1494" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1524" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Script/NetworkManager.cs</url>
-          <line>72</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" initialLine="72">
-            <startOffsets>
-              <option value="1537" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1615" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Script/NetworkManager.cs</url>
-          <line>79</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" initialLine="78">
-            <startOffsets>
-              <option value="1863" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1886" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

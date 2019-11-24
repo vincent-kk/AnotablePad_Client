@@ -11,6 +11,11 @@ public class ApplicationManager : MonoBehaviour
     [SerializeField] private DrawingSettings _drawingSettings;
     [SerializeField] private NetworkManager _networkManager;
 
+    private readonly char _delimiter = '|';
+    private readonly char _clientCommand = '#';
+    private readonly char _serverCommand = '@';
+    private readonly string _color = "CC->";
+
     private readonly Dictionary<string, int> _viewName = new Dictionary<string, int>(3)
     {
         {"connect", 0},
@@ -37,19 +42,35 @@ public class ApplicationManager : MonoBehaviour
         _drawable.SetNewDrawing(start);
     }
 
-    public void ChangeColor(string color)
-    {
-    }
-
     public void SendCoordinateData(Vector2 data)
     {
         var msg = data.x + "," + data.y;
         _networkManager.Send(msg);
     }
 
-    public void SendReleasedSignal()
+    public void SendCommendSignal(string command)
     {
-        var msg = "#EOF";
-        _networkManager.Send(msg);
+        command = _clientCommand + command;
+        _networkManager.Send(command);
+    }
+
+    public void SetMarkerColor(string color)
+    {
+        SendCommendSignal(_color + color);
+    }
+
+    public char GetDelimiter()
+    {
+        return _delimiter;
+    }
+
+    public char GetClientCommand()
+    {
+        return _clientCommand;
+    }
+
+    public char GetServerCommand()
+    {
+        return _serverCommand;
     }
 }

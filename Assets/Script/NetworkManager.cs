@@ -11,12 +11,10 @@ public class NetworkManager : MonoBehaviour
     [SerializeField] private InputField serverIp = null;
     [SerializeField] private InputField serverPort = null;
 
-    [SerializeField] private ApplicationManager app;
+    [SerializeField] private ApplicationManager _applicationManager;
 
 
     public int bufferSize = 1024;
-    private readonly string _delimiter = "|";
-
 
     private byte[] _receiveBuffer;
 
@@ -24,6 +22,9 @@ public class NetworkManager : MonoBehaviour
     private Encoding _encode;
 
     private static State _state = State.CONNECTION;
+
+    private char _delimiter;
+    private char _serverCommand;
 
     enum State
     {
@@ -39,6 +40,8 @@ public class NetworkManager : MonoBehaviour
     void Start()
     {
         _tcpManager = gameObject.AddComponent<TcpManager>();
+        _delimiter = _applicationManager.GetDelimiter();
+        _serverCommand = _applicationManager.GetServerCommand();
     }
 
     // Update is called once per frame
@@ -68,16 +71,16 @@ public class NetworkManager : MonoBehaviour
 
         if (TcpConnection(ip, port))
         {
-            Send("@Tablet");
+            Send(_serverCommand+"Tablet");
             var returnData = new byte[64];
             var recvSize = _tcpManager.BlockingReceive(ref returnData, returnData.Length);
             if (recvSize > 0)
             {
                 var msg = Encoding.UTF8.GetString(returnData).TrimEnd('\0');
-                if (msg.Equals("@CONNECTION"))
+                if (msg.Equals(_serverCommand+"CONNECTION"))
                 {
                     _state = State.DRAW;
-                    app.ChangeView("draw");
+                    _applicationManager.ChangeView("draw");
                 }
                 else
                 {
