@@ -44,6 +44,10 @@ public class NetworkManager : MonoBehaviour
         _serverCommand = _applicationManager.GetServerCommand();
     }
 
+    private void Awake()
+    {
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -71,13 +75,13 @@ public class NetworkManager : MonoBehaviour
 
         if (TcpConnection(ip, port))
         {
-            Send(_serverCommand+"Tablet");
+            Send(_serverCommand + "Tablet");
             var returnData = new byte[64];
             var recvSize = _tcpManager.BlockingReceive(ref returnData, returnData.Length);
             if (recvSize > 0)
             {
                 var msg = Encoding.UTF8.GetString(returnData).TrimEnd('\0');
-                if (msg.Equals(_serverCommand+"CONNECTION"))
+                if (msg.Equals(_serverCommand + "CONNECTION"))
                 {
                     _state = State.DRAW;
                     _applicationManager.ChangeView("draw");
