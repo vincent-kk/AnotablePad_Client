@@ -30,15 +30,16 @@ public class ApplicationManager : MonoBehaviour
 
     private void Start()
     {
-        ChangeView("connect");
+        ChangeView("connect", "connection");
     }
 
-    public void ChangeView(string view)
+    public void ChangeView(string view, string state)
     {
         var target = _viewName[view];
         for (var i = 0; i < views.Length; i++)
             views[i].SetActive(i == target);
-
+        
+        _networkManager.ChangeState(state);
         StartDrawing(target == 2);
     }
 
