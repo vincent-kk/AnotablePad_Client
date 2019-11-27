@@ -33,6 +33,11 @@ public class ApplicationManager : MonoBehaviour
         ChangeView("connect", "connection");
     }
 
+    private void Awake()
+    {
+        Screen.SetResolution(540, 900,false);
+    }
+
     public void ChangeView(string view, string state)
     {
         var target = _viewName[view];
