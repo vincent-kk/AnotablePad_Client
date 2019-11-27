@@ -83,8 +83,7 @@ public class NetworkManager : MonoBehaviour
                 var msg = Encoding.UTF8.GetString(returnData).TrimEnd('\0');
                 if (msg.Equals(_serverCommand + "CONNECTION"))
                 {
-                    _state = State.DRAW;
-                    _applicationManager.ChangeView("draw");
+                    _applicationManager.ChangeView("draw", "draw");
                 }
                 else
                 {
@@ -103,6 +102,29 @@ public class NetworkManager : MonoBehaviour
         return _tcpManager.Connect(serverIp, port);
     }
 
+    public void ChangeState(string state)
+    {
+        switch (state)
+        {
+            case "connection":
+                _state = State.CONNECTION;
+                break;
+            case "menu":
+                _state = State.MENU;
+                break;
+            case "room":
+                _state = State.ROOM;
+                break;
+            case "draw":
+                _state = State.DRAW;
+                break;
+            case "error":
+            default:
+                _state = State.ERROR;
+                break;
+        }
+    }
+
     public void Send(string msg)
     {
         msg += _delimiter;
@@ -110,6 +132,7 @@ public class NetworkManager : MonoBehaviour
         _tcpManager.Send(buffer, buffer.Length);
         ConsoleLogger(msg);
     }
+
 
     public string Receive()
     {
