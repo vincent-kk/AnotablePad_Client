@@ -23,14 +23,14 @@ public class ApplicationManager : MonoBehaviour
 
     private readonly Dictionary<string, int> _viewName = new Dictionary<string, int>(3)
     {
-        {"connect", 0},
-        {"select", 1},
+        {"connection", 0},
+        {"menu", 1},
         {"draw", 2}
     };
 
     private void Start()
     {
-        ChangeView("connect", "connection");
+        ChangeView("connection", "connection");
     }
 
     private void Awake()

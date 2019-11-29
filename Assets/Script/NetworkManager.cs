@@ -30,7 +30,6 @@ public class NetworkManager : MonoBehaviour
     {
         CONNECTION, // 연결 준비
         MENU, //메뉴 화면
-        ROOM, //방에서 대기중
         DRAW, //실제로 그리는중
         ERROR, // 오류.
     };
@@ -55,6 +54,8 @@ public class NetworkManager : MonoBehaviour
         {
             case State.CONNECTION:
                 break;
+            case State.MENU:
+                break;
             case State.DRAW:
                 break;
             case State.ERROR:
@@ -73,6 +74,24 @@ public class NetworkManager : MonoBehaviour
         serverPort.text = "";
 
 
+//        if (TcpConnection(ip, port))
+//        {
+//            Send(_serverCommand + "Tablet");
+//            var returnData = new byte[64];
+//            var recvSize = _tcpManager.BlockingReceive(ref returnData, returnData.Length);
+//            if (recvSize > 0)
+//            {
+//                var msg = Encoding.UTF8.GetString(returnData).TrimEnd('\0');
+//                if (msg.Equals(_serverCommand + "CONNECTION"))
+//                {
+//                    _applicationManager.ChangeView("draw", "draw");
+//                }
+//                else
+//                {
+//                    ConsoleLogger("Fail To Connect Server");
+//                }
+//            }
+//        }
         if (TcpConnection(ip, port))
         {
             Send(_serverCommand + "Tablet");
@@ -80,14 +99,26 @@ public class NetworkManager : MonoBehaviour
             var recvSize = _tcpManager.BlockingReceive(ref returnData, returnData.Length);
             if (recvSize > 0)
             {
+                TcpDisconnect();
                 var msg = Encoding.UTF8.GetString(returnData).TrimEnd('\0');
-                if (msg.Equals(_serverCommand + "CONNECTION"))
+                port = Convert.ToInt32(msg);
+                ConsoleLogger(ip +":"+port+" Reconnect");
+                if (TcpConnection(ip, port))
                 {
-                    _applicationManager.ChangeView("draw", "draw");
-                }
-                else
-                {
-                    ConsoleLogger("Fail To Connect Server");
+                    Send(_serverCommand + "Tablet");
+                    recvSize = _tcpManager.BlockingReceive(ref returnData, returnData.Length);
+                    if (recvSize > 0)
+                    {
+                        msg = Encoding.UTF8.GetString(returnData).TrimEnd('\0');
+                        if (msg.Equals(_serverCommand + "CONNECTION"))
+                        {
+                            _applicationManager.ChangeView("draw", "draw");
+                        }
+                    }
+                    else
+                    {
+                        ConsoleLogger("Fail To Connect Server");
+                    }
                 }
             }
         }
@@ -102,6 +133,11 @@ public class NetworkManager : MonoBehaviour
         return _tcpManager.Connect(serverIp, port);
     }
 
+    private void TcpDisconnect()
+    {
+        _tcpManager.Disconnect();
+    }
+
     public void ChangeState(string state)
     {
         switch (state)
@@ -111,9 +147,6 @@ public class NetworkManager : MonoBehaviour
                 break;
             case "menu":
                 _state = State.MENU;
-                break;
-            case "room":
-                _state = State.ROOM;
                 break;
             case "draw":
                 _state = State.DRAW;
