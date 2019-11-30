@@ -3,16 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="d77dc767-3e2b-433f-93cc-c409e567e6c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi/SciFi Atlas.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/SciFi/SciFi Atlas.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Wooden Atlas.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NGUI/Examples/Atlases/Wooden/Wooden Atlas.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/ApplicationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ApplicationManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Drawable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Drawable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/DrawingSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/DrawingSettings.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/OnTouchDraw.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/OnTouchDraw.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/TcpManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/TcpManager.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,18 +27,24 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/NetworkManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/OnTouchDraw.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/ConnectionView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/DrawingView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/SelectRoomView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/ApplicationManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/ApplicationManager.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/NetworkEventType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Main.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/ScrollManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Room.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/PacketInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/DrawingManage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/OverlayManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/DrawingSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Drawable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Runtime/Unity.TextMeshPro.asmdef" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Source/repos/ProcessTester/ProcessTester/ThreadObserver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/TcpManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -62,7 +65,15 @@
         <option value="$PROJECT_DIR$/Assets/Script/Drawable.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/DrawingSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/TcpManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/IBlock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Room.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/View.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/ConnectionView.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/SelectRoomView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/ScrollManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/DrawingView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/OverlayManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/ApplicationManager.cs" />
       </list>
     </option>
@@ -101,10 +112,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="11204">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="18600">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="11204" />
+      <option name="pid" value="18600" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -136,7 +147,8 @@
       <workItem from="1574826916214" duration="835000" />
       <workItem from="1574864614547" duration="738000" />
       <workItem from="1575005096985" duration="6330000" />
-      <workItem from="1575031799373" duration="2797000" />
+      <workItem from="1575031799373" duration="3867000" />
+      <workItem from="1575091567628" duration="16099000" />
     </task>
     <servers />
   </component>
