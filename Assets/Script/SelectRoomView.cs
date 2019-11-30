@@ -2,7 +2,6 @@
 
 public class SelectRoomView : MonoBehaviour, IView
 {
-    [SerializeField] private ScrollManager _scrollManager;
     [SerializeField] private ApplicationManager _applicationManager;
     public void ShowView(bool show)
     {

@@ -341,7 +341,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cfd07bf98a7e7f42b355cd158b528ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scrollManager: {fileID: 1104684192}
   _applicationManager: {fileID: 604814616}
 --- !u!1 &352074334
 GameObject:
@@ -1874,7 +1873,7 @@ MonoBehaviour:
   m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
-  m_Elasticity: 0.035
+  m_Elasticity: 0.015
   m_Inertia: 1
   m_DecelerationRate: 0.135
   m_ScrollSensitivity: 1
@@ -2762,10 +2761,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modal: {fileID: 932563016}
-  roomName: {fileID: 837747710}
+  roomNameField: {fileID: 837747710}
+  password: {fileID: 1747877158}
   blockBoxScroll: {fileID: 1104684196}
   overlayAlpha: {fileID: 1446049742}
   overlayButton: {fileID: 1446049744}
+  _applicationManager: {fileID: 604814616}
 --- !u!1 &1533244024
 GameObject:
   m_ObjectHideFlags: 0
@@ -2893,7 +2894,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1591760558}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1446049745}
+        m_MethodName: TryToEnterRoom
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1591760558
 MonoBehaviour:
   m_ObjectHideFlags: 0

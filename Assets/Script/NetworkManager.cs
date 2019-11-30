@@ -71,7 +71,7 @@ public class NetworkManager : MonoBehaviour
     public void ReconnectToNameServer()
     {
         TcpDisconnect();
-        _applicationManager.ChangeView("menu", "menu");
+        _applicationManager.ChangeView("menu");
 
         Thread.Sleep(100);
         if (TcpConnection(_serverIp, _serverPort))
@@ -81,7 +81,8 @@ public class NetworkManager : MonoBehaviour
         }
         else
         {
-            _applicationManager.ChangeView("menu", "error");
+            TcpDisconnect();
+            _applicationManager.ChangeView("connection");
             ConsoleLogger("Fail To Connect Server");
         }
     }
@@ -105,11 +106,13 @@ public class NetworkManager : MonoBehaviour
                     msg = Encoding.UTF8.GetString(returnData).TrimEnd('\0');
                     if (msg.Equals(_serverCommand + "CONNECTION"))
                     {
-                        _applicationManager.ChangeView("draw", "draw");
+                        _applicationManager.ChangeView("draw");
                     }
                 }
                 else
                 {
+                    TcpDisconnect();
+                    _applicationManager.ChangeView("connection");
                     ConsoleLogger("Fail To Connect Server");
                 }
             }
@@ -153,16 +156,20 @@ public class NetworkManager : MonoBehaviour
                 var msg = Encoding.UTF8.GetString(returnData).TrimEnd('\0');
                 if (msg.Equals(_serverCommand + "CONNECTION"))
                 {
-                    _applicationManager.ChangeView("menu", "menu");
+                    _applicationManager.ChangeView("menu");
                 }
                 else
                 {
+                    TcpDisconnect();
+                    _applicationManager.ChangeView("connection");
                     ConsoleLogger("Fail To Connect Server");
                 }
             }
         }
         else
         {
+            TcpDisconnect();
+            _applicationManager.ChangeView("connection");
             ConsoleLogger("Fail To Connect Server");
         }
     }

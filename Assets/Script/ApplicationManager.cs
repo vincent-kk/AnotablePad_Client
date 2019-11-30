@@ -38,7 +38,7 @@ public class ApplicationManager : MonoBehaviour
         views = new IView[viewObjects.Length];
         for (int i = 0; i < viewObjects.Length; i++)
             views[i] = viewObjects[i].GetComponent<IView>();
-        ChangeView("connection", "connection");
+        ChangeView("connection");
     }
 
 
@@ -47,13 +47,13 @@ public class ApplicationManager : MonoBehaviour
         Screen.SetResolution(540, 900, false);
     }
 
-    public void ChangeView(string view, string state)
+    public void ChangeView(string view)
     {
         var target = _viewName[view];
         for (var i = 0; i < views.Length; i++)
             views[i].ShowView(i == target);
 
-        _networkManager.ChangeState(state);
+        _networkManager.ChangeState(view);
     }
 
     private void StartDrawing(bool start)
