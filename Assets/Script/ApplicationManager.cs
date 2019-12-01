@@ -109,15 +109,12 @@ public class ApplicationManager : MonoBehaviour
         foreach (var token in tokens)
         {
             if (token == "") continue;
-
+            Debug.Log(token);
             if (token.Contains(char.ToString(_serverCommand)))
             {
                 if (token == _serverCommand + "ROOMCLOSED")
                     _networkManager.ReconnectToNameServer();
             }
-
-//            else if (token.Contains(char.ToString(_clientCommand))) ;
-//            else ;
         }
     }
 

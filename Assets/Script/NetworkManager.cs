@@ -72,19 +72,27 @@ public class NetworkManager : MonoBehaviour
     public void ReconnectToNameServer()
     {
         TcpDisconnect();
-        _applicationManager.ChangeView("menu");
-
         Thread.Sleep(100);
+
         if (TcpConnection(_serverIp, _serverPort))
         {
             Send(_serverCommand + "Tablet");
+            var returnData = new byte[64];
+            var recvSize = _tcpManager.BlockingReceive(ref returnData, returnData.Length);
+            if (recvSize > 0)
+            {
+                var msg = Encoding.UTF8.GetString(returnData).TrimEnd('\0');
+                if (msg.Equals(_serverCommand + "CONNECTION"))
+                {
+                    _applicationManager.ChangeView("menu");
+                    return;
+                }
+            }
         }
-        else
-        {
-            TcpDisconnect();
-            _applicationManager.ChangeView("connection");
-            ConsoleLogger("Fail To Connect Server");
-        }
+
+        TcpDisconnect();
+        _applicationManager.ChangeView("connection");
+        ConsoleLogger("Fail To Connect Server");
     }
 
     public void SwitchRoomServer()
@@ -93,8 +101,6 @@ public class NetworkManager : MonoBehaviour
         var recvSize = _tcpManager.BlockingReceive(ref returnData, returnData.Length);
         if (recvSize > 0)
         {
-//            ResumeNetworkThread();
-//            Thread.Sleep(100);
             TcpDisconnect();
             var msg = Encoding.UTF8.GetString(returnData).TrimEnd('\0');
             var port = Convert.ToInt32(msg);
@@ -166,6 +172,7 @@ public class NetworkManager : MonoBehaviour
         _applicationManager.ChangeView("connection");
         ConsoleLogger("Fail To Connect Server");
     }
+
     public void PauseNetworkThread()
     {
         _tcpManager.Pause();

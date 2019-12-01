@@ -26,8 +26,11 @@ public class ScrollManager : MonoBehaviour
     {
         if (_dictionary.Count > 0) ClearScrollBox();
         yOffset = itemOffsetY + interItem;
-        nextItemPosition = new Vector2(interItem, -interItem + yOffset);
+
+        if (itemsInLine == 1) nextItemPosition = new Vector2(0, -interItem + yOffset);
+        else nextItemPosition = new Vector2(interItem, -interItem + yOffset);
     }
+
     public void AddItemsFromList(IEnumerable<string> list)
     {
         InitScroll();
@@ -36,6 +39,7 @@ public class ScrollManager : MonoBehaviour
             AddItem(b);
         }
     }
+
     private void AddItem(string b)
     {
         // 이미 존재하면 리턴
@@ -62,7 +66,8 @@ public class ScrollManager : MonoBehaviour
         {
             obj.DeleteItem();
         }
-        container.sizeDelta = new Vector2(defaultWidth, interItem);
+
+        container.sizeDelta = new Vector2(0, interItem);
         _dictionary.Clear();
     }
 
@@ -71,6 +76,7 @@ public class ScrollManager : MonoBehaviour
         if (itemCount % itemsInLine == 0)
         {
             container.sizeDelta += new Vector2(0, yOffset);
+            if (itemsInLine == 1) return new Vector2(0, nextItemPosition.y - yOffset);
             return new Vector2(interItem, nextItemPosition.y - yOffset);
         }
         else

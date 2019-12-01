@@ -6,6 +6,6 @@ public class SelectRoomView : MonoBehaviour, IView
     public void ShowView(bool show)
     {
         this.gameObject.SetActive(show);
-        if(show)  _applicationManager.GetRoomList();
+        if(show) _applicationManager.GetRoomList();
     }
 }
