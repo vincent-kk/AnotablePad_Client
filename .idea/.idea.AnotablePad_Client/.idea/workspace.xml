@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d77dc767-3e2b-433f-93cc-c409e567e6c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/ApplicationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ApplicationManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/ScrollManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ScrollManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/SelectRoomView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/SelectRoomView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/TcpManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/TcpManager.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +60,6 @@
         <option value="$PROJECT_DIR$/Assets/StarlinkUI/Scripts/Generic/Misc/Music.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Drawable.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/DrawingSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/TcpManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/IBlock.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Room.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/View.cs" />
@@ -71,6 +68,7 @@
         <option value="$PROJECT_DIR$/Assets/Script/OverlayManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/SelectRoomView.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/ScrollManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/TcpManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/ApplicationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" />
       </list>
@@ -110,10 +108,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="18600">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="18180">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="18600" />
+      <option name="pid" value="18180" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -147,6 +145,7 @@
       <workItem from="1575005096985" duration="6330000" />
       <workItem from="1575031799373" duration="3867000" />
       <workItem from="1575091567628" duration="19120000" />
+      <workItem from="1575201360184" duration="8220000" />
     </task>
     <servers />
   </component>

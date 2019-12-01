@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Net;
 using System.Net.Sockets;
@@ -42,6 +43,7 @@ public class TcpManager : MonoBehaviour
 
     private static int s_mtu = 1400;
 
+    ManualResetEvent m_pause = new ManualResetEvent(true);
 
     // Use this for initialization
     void Start()
@@ -56,6 +58,7 @@ public class TcpManager : MonoBehaviour
     {
     }
 
+/*  //서버 기능 파트
     // 대기 시작.
     public bool StartServer(int port, int connectionNum)
     {
@@ -103,7 +106,7 @@ public class TcpManager : MonoBehaviour
         m_isServer = false;
 
         Debug.Log("Server stopped.");
-    }
+    }*/
 
 
     // 접속.
@@ -242,9 +245,6 @@ public class TcpManager : MonoBehaviour
 
         while (m_threadLoop)
         {
-            // 클라이언트로부터의 접속을 기다립니다. 
-            AcceptClient();
-
             // 클라이언트와의 송수신을 처리합니다.
             if (m_socket != null && m_isConnected == true)
             {
@@ -336,5 +336,30 @@ public class TcpManager : MonoBehaviour
     public bool IsConnected()
     {
         return m_isConnected;
+    }
+
+    public void Pause()
+    {
+        try
+        {
+            m_thread.Suspend();
+        }
+        catch (Exception e)
+        {
+            Debug.Log(e.Message);
+        }
+        
+    }
+
+    public void Resume()
+    {
+        try
+        {
+            m_thread.Resume();
+        }
+        catch (Exception e)
+        {
+            Debug.Log(e.Message);
+        }
     }
 }

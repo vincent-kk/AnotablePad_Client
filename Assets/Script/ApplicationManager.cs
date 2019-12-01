@@ -14,7 +14,7 @@ public class ApplicationManager : MonoBehaviour
     [SerializeField] private ScrollManager _scrollManager;
 
     private readonly char _delimiter = '|';
-    private readonly char _delimiter2 = '%';
+    private readonly char _delimiterUI = '%';
 
     private readonly char _clientCommand = '#';
     private readonly char _serverCommand = '@';
@@ -134,13 +134,19 @@ public class ApplicationManager : MonoBehaviour
             {
                 if (token.Contains(_serverCommand + "ROOM-LIST"))
                 {
-                    var roomList = token.Split(_delimiter2).ToList();
+                    var roomList = token.Split(_delimiterUI).ToList();
                     roomList.Remove(_serverCommand + "ROOM-LIST");
                     roomList.Remove("");
                     _scrollManager.AddItemsFromList(roomList);
                 }
+                else if (token == _serverCommand + "START-DRAWING")
+                {
+                    _networkManager.PauseNetworkThread();
+                    _networkManager.SwitchRoomServer();
+                }
                 else if (token == _serverCommand + "ENTER-ROOM")
                 {
+
                 }
             }
         }
@@ -153,6 +159,6 @@ public class ApplicationManager : MonoBehaviour
 
     public void EnterRoom(string room, string pw)
     {
-        Debug.Log(room + ":" + pw);
+        _networkManager.Send(_serverCommand + "ENTER-ROOM" + _delimiterUI + room + _delimiterUI + pw);
     }
 }
