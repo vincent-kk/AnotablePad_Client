@@ -1,5 +1,5 @@
 ﻿
-using FreeDraw;
+
 using UnityEngine;
 
 public class DrawingView : MonoBehaviour, IView

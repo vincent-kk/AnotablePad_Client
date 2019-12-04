@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using FreeDraw;
 using UnityEngine;
 
 public class ApplicationManager : MonoBehaviour
@@ -12,6 +11,7 @@ public class ApplicationManager : MonoBehaviour
     [SerializeField] private DrawingSettings _drawingSettings;
     [SerializeField] private NetworkManager _networkManager;
     [SerializeField] private ScrollManager _scrollManager;
+    [SerializeField] private WarningOverlayManager _warningOverlayManager;
 
 //    private readonly char _delimiter = '|';
 //    private readonly char _delimiterUI = '%';
@@ -20,7 +20,7 @@ public class ApplicationManager : MonoBehaviour
 //    private readonly char _serverCommand = '@';
 //    private readonly string _color = "CC->";
 //    private readonly string _background = "BG->";
-    
+
     private IView[] views;
 
     private readonly Dictionary<string, int> _viewName = new Dictionary<string, int>(3)
@@ -59,6 +59,11 @@ public class ApplicationManager : MonoBehaviour
         _drawable.SetNewDrawing(start);
     }
 
+    public void ShowWaringModal(string type)
+    {
+        _warningOverlayManager.ShowOverlay(type);
+    }
+
     public void SendCoordinateData(Vector2 data)
     {
         //var msg = (Math.Round((data.x / resolutionX), 4) + "," + Math.Round((data.y / resolutionY), 4));
@@ -93,11 +98,14 @@ public class ApplicationManager : MonoBehaviour
         foreach (var token in tokens)
         {
             if (token == "") continue;
-            Debug.Log(token);
             if (token.Contains(char.ToString(AppData.ServerCommand)))
             {
                 if (token == CommendBook.ROOM_CLOSED)
+                {
+                    _warningOverlayManager.ShowOverlay("RoomServer-Closed");
                     _networkManager.ReconnectToNameServer();
+                }
+
             }
         }
     }
@@ -125,9 +133,21 @@ public class ApplicationManager : MonoBehaviour
                     _networkManager.PauseNetworkThread();
                     _networkManager.SwitchRoomServer();
                 }
-                else if (token == CommendBook.ENTER_ROOM)
+                else if (token == CommendBook.ERROR_MESSAGE)
                 {
-
+                    _warningOverlayManager.ShowOverlay("");
+                }
+                else if (token == CommendBook.COMMEND_ERROR)
+                {
+                    _warningOverlayManager.ShowOverlay("Invalid-Commend");
+                }
+                else if (token == CommendBook.PASSWORD_ERROR)
+                {
+                    _warningOverlayManager.ShowOverlay("Wrong-Pw");
+                }
+                else if (token == CommendBook.NO_ROOM_ERROR)
+                {
+                    _warningOverlayManager.ShowOverlay("No-Room");
                 }
             }
         }
@@ -140,6 +160,6 @@ public class ApplicationManager : MonoBehaviour
 
     public void EnterRoom(string room, string pw)
     {
-        _networkManager.Send(CommendBook.ENTER_ROOM+ AppData.DelimiterUI + room + AppData.DelimiterUI + pw);
+        _networkManager.Send(CommendBook.ENTER_ROOM + AppData.DelimiterUI + room + AppData.DelimiterUI + pw);
     }
 }
