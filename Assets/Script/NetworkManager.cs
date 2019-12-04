@@ -14,9 +14,6 @@ public class NetworkManager : MonoBehaviour
 
     [SerializeField] private ApplicationManager _applicationManager;
 
-
-    public int bufferSize = 1024;
-
     private byte[] _receiveBuffer;
 
     private TcpManager _tcpManager = null;
@@ -219,7 +216,7 @@ public class NetworkManager : MonoBehaviour
 
     public string Receive()
     {
-        var returnData = new byte[bufferSize];
+        var returnData = new byte[AppData.BufferSize];
         var recvSize = _tcpManager.Receive(ref returnData, returnData.Length);
         if (recvSize > 0)
         {

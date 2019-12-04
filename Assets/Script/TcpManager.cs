@@ -36,10 +36,6 @@ public class TcpManager : MonoBehaviour {
 
     protected Thread _thread = null;
 
-    private static int _mtu = 1400;
-
-    ManualResetEvent _pause = new ManualResetEvent (true);
-
     // Use this for initialization
     void Start () {
         // 송수신 버퍼를 작성합니다.
@@ -188,7 +184,7 @@ public class TcpManager : MonoBehaviour {
         try {
             // 송신처리.
             if (_socket.Poll (0, SelectMode.SelectWrite)) {
-                byte[] buffer = new byte[_mtu];
+                byte[] buffer = new byte[AppData.BufferSize];
 
                 int sendSize = _sendQueue.Dequeue (ref buffer, buffer.Length);
                 while (sendSize > 0) {
@@ -206,7 +202,7 @@ public class TcpManager : MonoBehaviour {
         // 수신처리.
         try {
             while (_socket.Poll (0, SelectMode.SelectRead)) {
-                byte[] buffer = new byte[_mtu];
+                byte[] buffer = new byte[AppData.BufferSize];
 
                 int recvSize = _socket.Receive (buffer, buffer.Length, SocketFlags.None);
                 if (recvSize == 0) {
