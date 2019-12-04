@@ -13,16 +13,14 @@ public class ApplicationManager : MonoBehaviour
     [SerializeField] private NetworkManager _networkManager;
     [SerializeField] private ScrollManager _scrollManager;
 
-    private readonly char _delimiter = '|';
-    private readonly char _delimiterUI = '%';
-
-    private readonly char _clientCommand = '#';
-    private readonly char _serverCommand = '@';
-    private readonly string _color = "CC->";
-    private readonly string _background = "BG->";
-
-    private readonly int resolutionX = 1080;
-    private readonly int resolutionY = 1920;
+//    private readonly char _delimiter = '|';
+//    private readonly char _delimiterUI = '%';
+//
+//    private readonly char _clientCommand = '#';
+//    private readonly char _serverCommand = '@';
+//    private readonly string _color = "CC->";
+//    private readonly string _background = "BG->";
+    
     private IView[] views;
 
     private readonly Dictionary<string, int> _viewName = new Dictionary<string, int>(3)
@@ -70,49 +68,35 @@ public class ApplicationManager : MonoBehaviour
 
     public void SendCommendSignal(string command)
     {
-        command = _clientCommand + command;
+        command = AppData.ClientCommand + command;
         _networkManager.Send(command);
     }
 
     public void SetMarkerColor(string color)
     {
-        SendCommendSignal(_color + color);
+        SendCommendSignal(AppData.ColorCommand + color);
     }
 
     public void ClearCanvas()
     {
         _drawable.ResetCanvas();
-        SendCommendSignal(_background + "CLEAR");
+        SendCommendSignal(AppData.BackgroundClearCommand);
     }
 
-    public char GetDelimiter()
-    {
-        return _delimiter;
-    }
-
-    public char GetClientCommand()
-    {
-        return _clientCommand;
-    }
-
-    public char GetServerCommand()
-    {
-        return _serverCommand;
-    }
 
     public void ReceiveDrawingData()
     {
         var msg = _networkManager.Receive();
         if (msg == null) return;
         msg = msg.TrimEnd('\0');
-        var tokens = msg.Split(_delimiter);
+        var tokens = msg.Split(AppData.Delimiter);
         foreach (var token in tokens)
         {
             if (token == "") continue;
             Debug.Log(token);
-            if (token.Contains(char.ToString(_serverCommand)))
+            if (token.Contains(char.ToString(AppData.ServerCommand)))
             {
-                if (token == _serverCommand + "ROOMCLOSED")
+                if (token == CommendBook.ROOM_CLOSED)
                     _networkManager.ReconnectToNameServer();
             }
         }
@@ -123,25 +107,25 @@ public class ApplicationManager : MonoBehaviour
         var msg = _networkManager.Receive();
         if (msg == null) return;
         msg = msg.TrimEnd('\0');
-        var tokens = msg.Split(_delimiter);
+        var tokens = msg.Split(AppData.Delimiter);
         foreach (var token in tokens)
         {
             if (token == "") continue;
-            if (token.Contains(char.ToString(_serverCommand)))
+            if (token.Contains(char.ToString(AppData.ServerCommand)))
             {
-                if (token.Contains(_serverCommand + "ROOM-LIST"))
+                if (token.Contains(CommendBook.HEADER_ROOMLIST))
                 {
-                    var roomList = token.Split(_delimiterUI).ToList();
-                    roomList.Remove(_serverCommand + "ROOM-LIST");
+                    var roomList = token.Split(AppData.DelimiterUI).ToList();
+                    roomList.Remove(CommendBook.HEADER_ROOMLIST);
                     roomList.Remove("");
                     _scrollManager.AddItemsFromList(roomList);
                 }
-                else if (token == _serverCommand + "START-DRAWING")
+                else if (token == CommendBook.START_DRAWING)
                 {
                     _networkManager.PauseNetworkThread();
                     _networkManager.SwitchRoomServer();
                 }
-                else if (token == _serverCommand + "ENTER-ROOM")
+                else if (token == CommendBook.ENTER_ROOM)
                 {
 
                 }
@@ -151,11 +135,11 @@ public class ApplicationManager : MonoBehaviour
 
     public void GetRoomList()
     {
-        _networkManager.Send(_serverCommand + "FIND-ROOM");
+        _networkManager.Send(CommendBook.FIND_ROOM);
     }
 
     public void EnterRoom(string room, string pw)
     {
-        _networkManager.Send(_serverCommand + "ENTER-ROOM" + _delimiterUI + room + _delimiterUI + pw);
+        _networkManager.Send(CommendBook.ENTER_ROOM+ AppData.DelimiterUI + room + AppData.DelimiterUI + pw);
     }
 }

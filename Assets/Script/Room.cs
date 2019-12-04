@@ -7,7 +7,7 @@ public class Room : MonoBehaviour, Item
 {
     [SerializeField] private GameObject background;
     [SerializeField] private Text nameTag;
-    private OverlayManager _overlayManager;
+    private EnterOverlayManager _overlayManager;
 
     private string _name;
 
@@ -20,7 +20,7 @@ public class Room : MonoBehaviour, Item
     public void TouchEvent()
     {
         if (_overlayManager == null)
-            _overlayManager = GameObject.Find("RoomModalOverlay").GetComponent<OverlayManager>();
+            _overlayManager = GameObject.Find("RoomModalOverlay").GetComponent<EnterOverlayManager>();
         _overlayManager.ShowOverlay(_name);
     }
 

@@ -24,12 +24,6 @@ public class NetworkManager : MonoBehaviour
 
     private static State _state = State.CONNECTION;
 
-    private char _delimiter;
-    private char _serverCommand;
-
-    private string _serverIp;
-    private int _serverPort;
-
     enum State
     {
         CONNECTION, // 연결 준비
@@ -43,8 +37,6 @@ public class NetworkManager : MonoBehaviour
     void Start()
     {
         _tcpManager = gameObject.AddComponent<TcpManager>();
-        _delimiter = _applicationManager.GetDelimiter();
-        _serverCommand = _applicationManager.GetServerCommand();
     }
 
     private void Awake()
@@ -74,15 +66,15 @@ public class NetworkManager : MonoBehaviour
         TcpDisconnect();
         Thread.Sleep(100);
 
-        if (TcpConnection(_serverIp, _serverPort))
+        if (TcpConnection(AppData.ServerIp, AppData.ServerPort))
         {
-            Send(_serverCommand + "Tablet");
+            Send(AppData.ServerCommand + "Tablet");
             var returnData = new byte[64];
             var recvSize = _tcpManager.BlockingReceive(ref returnData, returnData.Length);
             if (recvSize > 0)
             {
                 var msg = Encoding.UTF8.GetString(returnData).TrimEnd('\0');
-                if (msg.Equals(_serverCommand + "CONNECTION"))
+                if (msg.Equals(AppData.ServerCommand + "CONNECTION"))
                 {
                     _applicationManager.ChangeView("menu");
                     return;
@@ -104,15 +96,15 @@ public class NetworkManager : MonoBehaviour
             TcpDisconnect();
             var msg = Encoding.UTF8.GetString(returnData).TrimEnd('\0');
             var port = Convert.ToInt32(msg);
-            ConsoleLogger(_serverIp + ":" + port + " Reconnect");
-            if (TcpConnection(_serverIp, port))
+            ConsoleLogger(AppData.ServerIp + ":" + port + " Reconnect");
+            if (TcpConnection(AppData.ServerIp, port))
             {
-                Send(_serverCommand + "Tablet");
+                Send(AppData.ServerCommand + "Tablet");
                 recvSize = _tcpManager.BlockingReceive(ref returnData, returnData.Length);
                 if (recvSize > 0)
                 {
                     msg = Encoding.UTF8.GetString(returnData).TrimEnd('\0');
-                    if (msg.Equals(_serverCommand + "CONNECTION"))
+                    if (msg.Equals(AppData.ServerCommand + "CONNECTION"))
                     {
                         _applicationManager.ChangeView("draw");
                     }
@@ -129,10 +121,10 @@ public class NetworkManager : MonoBehaviour
 
     public void ConnectToServer()
     {
-        _serverIp = serverIp.text;
-        _serverPort = Convert.ToInt32(serverPort.text);
+        AppData.ServerIp = serverIp.text;
+        AppData.ServerPort = Convert.ToInt32(serverPort.text);
 
-        Debug.Log("server : " + _serverIp + " : " + _serverPort);
+        Debug.Log("server : " + AppData.ServerIp + " : " + AppData.ServerPort);
 
         serverIp.text = "";
         serverPort.text = "";
@@ -152,15 +144,15 @@ public class NetworkManager : MonoBehaviour
 //            }
 //        }
 
-        if (TcpConnection(_serverIp, _serverPort))
+        if (TcpConnection(AppData.ServerIp, AppData.ServerPort))
         {
-            Send(_serverCommand + "Tablet");
+            Send(AppData.ServerCommand + "Tablet");
             var returnData = new byte[64];
             var recvSize = _tcpManager.BlockingReceive(ref returnData, returnData.Length);
             if (recvSize > 0)
             {
                 var msg = Encoding.UTF8.GetString(returnData).TrimEnd('\0');
-                if (msg.Equals(_serverCommand + "CONNECTION"))
+                if (msg.Equals(AppData.ServerCommand + "CONNECTION"))
                 {
                     _applicationManager.ChangeView("menu");
                     return;
@@ -218,7 +210,7 @@ public class NetworkManager : MonoBehaviour
 
     public void Send(string msg)
     {
-        msg += _delimiter;
+        msg += AppData.Delimiter;
         var buffer = System.Text.Encoding.UTF8.GetBytes(msg);
         _tcpManager.Send(buffer, buffer.Length);
         ConsoleLogger(msg);

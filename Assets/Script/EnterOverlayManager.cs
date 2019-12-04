@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class OverlayManager : MonoBehaviour
+public class EnterOverlayManager : MonoBehaviour
 {
     [SerializeField] private GameObject modal;
     [SerializeField] private Text roomNameField;
