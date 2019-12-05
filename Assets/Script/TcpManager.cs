@@ -85,9 +85,10 @@ public class TcpManager : MonoBehaviour {
     // 끊기.
     public void Disconnect () {
         _isConnected = false;
-
+        _threadLoop = false;
         if (_socket != null) {
             // 소켓 클로즈.
+//            _thread.Join();
             _socket.Shutdown (SocketShutdown.Both);
             _socket.Close ();
             _socket = null;

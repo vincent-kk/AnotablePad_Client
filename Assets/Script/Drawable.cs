@@ -297,6 +297,9 @@ public class Drawable : MonoBehaviour
     {
         if (_nowDrawing != drawing) ResetCanvas();
         this._nowDrawing = drawing;
+
+        Pen_Colour = Color.black;
+        Pen_Width = 2;
     }
 
     private void SendCoordinateData(Vector2 data)
