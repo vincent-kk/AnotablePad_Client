@@ -56,7 +56,7 @@ public class WarningOverlayManager : MonoBehaviour
                 break;
             case "Invalid-Ip":
                 title.text = "Invalid IP";
-                body.text = "IP has the following format:\n[0,255].[0,255].[0,255].[0,255]";
+                body.text = "IP has the following format:\n255.255.255.255";
                 break;
             case "Network-Disconnection":
                 title.text = "Disconnection";
@@ -73,6 +73,10 @@ public class WarningOverlayManager : MonoBehaviour
             case "No-Room":
                 title.text = "Room Disappears";
                 body.text = "Where is your Room??";
+                break;
+            case "Server-Not-Found":
+                title.text = "Server Not Found";
+                body.text = "Can't Find Name Server";
                 break;
             default:
                 title.text = "Waring";

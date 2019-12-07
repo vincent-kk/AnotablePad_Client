@@ -127,27 +127,33 @@ public class ApplicationManager : MonoBehaviour
                     roomList.Remove(CommendBook.HEADER_ROOMLIST);
                     roomList.Remove("");
                     _scrollManager.AddItemsFromList(roomList);
+                    continue;
                 }
                 else if (token == CommendBook.START_DRAWING)
                 {
                     _networkManager.PauseNetworkThread();
                     _networkManager.SwitchRoomServer();
+                    continue;
                 }
                 else if (token == CommendBook.ERROR_MESSAGE)
                 {
                     _warningOverlayManager.ShowOverlay("");
+                    continue;
                 }
                 else if (token == CommendBook.COMMEND_ERROR)
                 {
                     _warningOverlayManager.ShowOverlay("Invalid-Commend");
+                    continue;
                 }
                 else if (token == CommendBook.PASSWORD_ERROR)
                 {
                     _warningOverlayManager.ShowOverlay("Wrong-Pw");
+                    continue;
                 }
                 else if (token == CommendBook.NO_ROOM_ERROR)
                 {
                     _warningOverlayManager.ShowOverlay("No-Room");
+                    continue;
                 }
             }
         }

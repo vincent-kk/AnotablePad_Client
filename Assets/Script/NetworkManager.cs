@@ -1,9 +1,7 @@
 ﻿using System;
-using System.IO;
-using System.Net.Sockets;
 using System.Text;
 using System.Threading;
-using TMPro;
+using UnityEngine.Networking;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -31,9 +29,9 @@ public class NetworkManager : MonoBehaviour
     };
 
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-
+        _tcpManager.RegisterEventHandler(OnServerDisconnectedEvent);
     }
 
     // Update is called once per frame
@@ -47,6 +45,7 @@ public class NetworkManager : MonoBehaviour
                 _applicationManager.ReceiveRoomData();
                 break;
             case State.DRAW:
+                if (!_tcpManager.Sock.Connected) TcpDisconnect(false);
                 _applicationManager.ReceiveDrawingData();
                 break;
             case State.ERROR:
@@ -56,7 +55,7 @@ public class NetworkManager : MonoBehaviour
 
     public void ReconnectToNameServer()
     {
-        TcpDisconnect();
+        TcpDisconnect(true);
         Thread.Sleep(100);
 
         if (TcpConnection(AppData.ServerIp, AppData.ServerPort))
@@ -75,10 +74,7 @@ public class NetworkManager : MonoBehaviour
             }
         }
 
-        TcpDisconnect();
-        _applicationManager.ChangeView("connection");
-        _applicationManager.ShowWaringModal("Network-Disconnection");
-        ConsoleLogger("Fail To Connect Server");
+        TcpDisconnect(false);
     }
 
     public void SwitchRoomServer()
@@ -87,7 +83,7 @@ public class NetworkManager : MonoBehaviour
         var recvSize = _tcpManager.BlockingReceive(ref returnData, returnData.Length);
         if (recvSize > 0)
         {
-            TcpDisconnect();
+            TcpDisconnect(true);
             var msg = Encoding.UTF8.GetString(returnData).TrimEnd('\0');
             var port = Convert.ToInt32(msg);
             ConsoleLogger(AppData.ServerIp + ":" + port + " Reconnect");
@@ -98,20 +94,16 @@ public class NetworkManager : MonoBehaviour
                 if (recvSize > 0)
                 {
                     msg = Encoding.UTF8.GetString(returnData).TrimEnd('\0');
-                    if (msg.Equals(CommendBook.CONNECTION))
+                    if (msg.Contains(CommendBook.CONNECTION))
                     {
                         _applicationManager.ChangeView("draw");
+                        return;
                     }
-                }
-                else
-                {
-                    TcpDisconnect();
-                    _applicationManager.ChangeView("connection");
-                    _applicationManager.ShowWaringModal("Network-Disconnection");
-                    ConsoleLogger("Fail To Connect Server");
                 }
             }
         }
+
+        TcpDisconnect(false);
     }
 
     public void ConnectToServer()
@@ -145,11 +137,8 @@ public class NetworkManager : MonoBehaviour
                 }
             }
         }
-
-        TcpDisconnect();
-        _applicationManager.ShowWaringModal("Network-Disconnection");
-        _applicationManager.ChangeView("connection");
-        ConsoleLogger("Fail To Connect Server");
+        _applicationManager.ShowWaringModal("Server-Not-Found");
+        TcpDisconnect(false);
     }
 
     public void PauseNetworkThread()
@@ -167,9 +156,9 @@ public class NetworkManager : MonoBehaviour
         return _tcpManager.Connect(serverIp, port);
     }
 
-    private void TcpDisconnect()
+    private void TcpDisconnect(bool switchServer)
     {
-        _tcpManager.Disconnect();
+        _tcpManager.Disconnect(switchServer);
     }
 
     public void ChangeState(string state)
@@ -225,33 +214,14 @@ public class NetworkManager : MonoBehaviour
     {
         if (_tcpManager != null)
         {
-            _tcpManager.Disconnect();
+            _tcpManager.Disconnect(true);
         }
     }
 
-    public void OnEventHandling(NetEventState state)
+    private void OnServerDisconnectedEvent()
     {
-        switch (state.type)
-        {
-            case NetEventType.Connect:
-                if (_tcpManager.IsServer())
-                {
-                }
-                else
-                {
-                }
-
-                break;
-
-            case NetEventType.Disconnect:
-                if (_tcpManager.IsServer())
-                {
-                }
-                else
-                {
-                }
-
-                break;
-        }
+        _applicationManager.ShowWaringModal("Network-Disconnection");
+        _applicationManager.ChangeView("connection");
+        ConsoleLogger("Fail To Connect Server");
     }
 }
