@@ -6,38 +6,34 @@ using UnityEngine;
 
 public class TcpManager : MonoBehaviour
 {
-    private Socket _listener = null;
-
-    // 클라이언트와의 접속용 소켓.
+    // 접속용 소켓
     private Socket _socket = null;
 
     public Socket Sock => _socket;
 
-    // 송신 버퍼.
+    // 송신 버퍼 큐
     private PacketQueue _sendQueue;
 
-    // 수신 버퍼.
+    // 수신 버퍼 큐
     private PacketQueue _recvQueue;
 
-    // 접속 플래그.
+    // 접속 여부 확인
     private bool _isConnected = false;
 
     public bool isConnected => _isConnected;
 
-    //
-    // 이벤트 관련 멤버 변수.
-    //
 
     // 이벤트 통지 델리게이트.
     public delegate void EventHandler();
 
     private EventHandler _handler;
 
-
+    // Thread 관련 변수
     private bool _threadLoop = false;
 
     private Thread _thread = null;
 
+    // thread join을 위한 GC
     private Thread _garbagecollector;
 
     // Use this for initialization
@@ -49,15 +45,15 @@ public class TcpManager : MonoBehaviour
         _garbagecollector = new Thread(new ThreadStart(Observing));
     }
 
-    // 접속.
+    /// <summary>
+    /// 접속 요청을 처리. 접속에 성공하면 Dispatch Thread를 동작한다.
+    /// </summary>
+    /// <param name="address"></param>
+    /// <param name="port"></param>
+    /// <returns></returns>
     public bool Connect(string address, int port)
     {
         Debug.Log("TransportTCP connect called.");
-
-        if (_listener != null)
-        {
-            return false;
-        }
 
         bool ret = false;
         try
@@ -87,6 +83,10 @@ public class TcpManager : MonoBehaviour
         return _isConnected;
     }
 
+    /// <summary>
+    /// Dispatch Thread를 Join시키기 위한 Thread.
+    /// Thread가 없을 경우엔 1초씩 대기하며 Thread를 기다린다.
+    /// </summary>
     private void Observing()
     {
         while (true)
@@ -96,7 +96,11 @@ public class TcpManager : MonoBehaviour
         }
     }
 
-    // 끊기.
+    /// <summary>
+    /// 접속 종료 통지.
+    /// 서버를 전환하기 위한 것인지, 완전히 종료하기 위함인지를 구분한다.
+    /// </summary>
+    /// <param name="switchServer"></param>
     public void Disconnect(bool switchServer)
     {
         if (_socket == null) return;
@@ -118,10 +122,17 @@ public class TcpManager : MonoBehaviour
             _socket = null;
         }
 
+        // 완전히 연결을 종료할 때에만 실행됨.
         if (!switchServer) _handler?.Invoke();
     }
 
-    // 송신처리.
+    /// <summary>
+    /// byte array 전송 요청.
+    /// Send Queue에 저장하고 다음 Dispatch에서 실제 전송이 발생한다.
+    /// </summary>
+    /// <param name="data"></param>
+    /// <param name="size"></param>
+    /// <returns></returns>
     public int Send(byte[] data, int size)
     {
         if (_sendQueue == null)
@@ -132,7 +143,12 @@ public class TcpManager : MonoBehaviour
         return _sendQueue.Enqueue(data, size);
     }
 
-    // 수신처리.
+    /// <summary>
+    /// 현재 Receive Queue에 있는 데이터를 추출하여 반환한다.
+    /// </summary>
+    /// <param name="buffer"></param>
+    /// <param name="size"></param>
+    /// <returns></returns>
     public int Receive(ref byte[] buffer, int size)
     {
         if (_recvQueue == null)
@@ -143,25 +159,42 @@ public class TcpManager : MonoBehaviour
         return _recvQueue.Dequeue(ref buffer, size);
     }
 
+    /// <summary>
+    /// Receive Queue를 쓰지 않고 Blocking으로 데이터를 수신하기 위한 함수.
+    /// 동기화를 위해 사용된다.
+    /// </summary>
+    /// <param name="buffer"></param>
+    /// <param name="size"></param>
+    /// <returns></returns>
     public int BlockingReceive(ref byte[] buffer, int size)
     {
         return _socket.Receive(buffer, size, SocketFlags.None);
     }
 
-    // 이벤트 통지함수 등록.
+    /// <summary>
+    /// 델리게이트를 등록하여 사용한다.
+    /// </summary>
+    /// <param name="handler"></param>
     public void RegisterEventHandler(EventHandler handler)
     {
         _handler += handler;
     }
 
-    // 이벤트 통지함수 삭제.
+    /// <summary>
+    /// 델리게이트를 삭제한다.
+    /// </summary>
+    /// <param name="handler"></param>
     public void UnregisterEventHandler(EventHandler handler)
     {
         _handler -= handler;
     }
 
-    // 스레드 실행 함수.
-    bool LaunchThread()
+    /// <summary>
+    /// Dispatch Thread를 동작시킨다.
+    /// 이후 Connection이 유지되는 동안에 계속 데이터를 수신/송신한다.
+    /// </summary>
+    /// <returns></returns>
+    private bool LaunchThread()
     {
         try
         {
@@ -179,8 +212,11 @@ public class TcpManager : MonoBehaviour
         return true;
     }
 
-    // 스레드 측의 송수신 처리.
-    public void Dispatch()
+    /// <summary>
+    /// Loop를 돌며 Dispatch 동작을 수행한다.
+    /// Non-Blocking 수신/송신을 가능하게 한다.
+    /// </summary>
+    private void Dispatch()
     {
         Debug.Log("Dispatch thread started.");
 
@@ -202,8 +238,11 @@ public class TcpManager : MonoBehaviour
     }
 
 
-    // 스레드 측 송신처리 .
-    void DispatchSend()
+    /// <summary>
+    /// Dispatch Thread의 송신 처리부.
+    /// 큐의 데이터를 꺼내서 실제 송신 버퍼에 데이터를 전달한다.
+    /// </summary>
+    private void DispatchSend()
     {
         try
         {
@@ -226,8 +265,12 @@ public class TcpManager : MonoBehaviour
         }
     }
 
-    // 스레드 측의 수신처리.
-    void DispatchReceive()
+    /// <summary>
+    /// Dispatch Thread의 수신 처리부
+    /// 수신 데이터가 있으면 이를 받아서 버퍼 큐에 저장한다.
+    /// 전송되는 데이터가 없으면 끊겼다고 판단하여 끊김을 통지한다.
+    /// </summary>
+    private void DispatchReceive()
     {
         // 수신처리.
         try
@@ -255,6 +298,9 @@ public class TcpManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Dispatch Thread를 일시 정지한다.
+    /// </summary>
     public void Pause()
     {
         try
@@ -267,6 +313,9 @@ public class TcpManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Dispatch Thread를 재개한다.
+    /// </summary>
     public void Resume()
     {
         try
