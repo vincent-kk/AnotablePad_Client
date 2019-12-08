@@ -2,9 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d77dc767-3e2b-433f-93cc-c409e567e6c7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnotablePad_Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/ApplicationData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ApplicationData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/ApplicationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ApplicationManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/ConnectionView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ConnectionView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Drawable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Drawable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/DrawingManage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/DrawingManage.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/DrawingSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/DrawingSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/DrawingView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/DrawingView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/EnterOverlayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/EnterOverlayManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/IView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/IView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/NetworkEventType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/NetworkEventType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/PacketInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PacketInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Room.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/ScrollManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ScrollManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/SelectRoomView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/SelectRoomView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/TcpManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/TcpManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/WarningOverlayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/WarningOverlayManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TempBuild/AnotableNote_Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TempBuild/AnotableNote_Data/Managed/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TempBuild/AnotableNote_Data/Managed/Unity.Analytics.DataPrivacy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TempBuild/AnotableNote_Data/Managed/Unity.Analytics.DataPrivacy.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TempBuild/AnotableNote_Data/Managed/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TempBuild/AnotableNote_Data/Managed/Unity.TextMeshPro.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TempBuild/AnotableNote_Data/Managed/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TempBuild/AnotableNote_Data/Managed/Unity.Timeline.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TempBuild/AnotableNote_Data/Managed/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TempBuild/AnotableNote_Data/Managed/UnityEngine.UI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TempBuild/AnotableNote_Data/Managed/XiaomiSupport.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TempBuild/AnotableNote_Data/Managed/XiaomiSupport.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TempBuild/AnotableNote_Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/TempBuild/AnotableNote_Data/globalgamemanagers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TempBuild/AnotableNote_Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/TempBuild/AnotableNote_Data/level0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TempBuild/AnotableNote_Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/TempBuild/AnotableNote_Data/sharedassets0.assets" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,12 +62,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/ApplicationManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/ApplicationManager.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/NetworkEventType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Main.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/ScrollManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Room.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/PacketInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/DrawingManage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/DrawingSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Drawable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" root0="FORCE_HIGHLIGHTING" />
@@ -48,8 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/NetworkEventType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PacketInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/OnTouchDraw.cs" />
         <option value="$PROJECT_DIR$/Assets/FreeDraw/Scripts/DrawingSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/FreeDraw/Scripts/Drawable.cs" />
@@ -61,21 +88,25 @@
         <option value="$PROJECT_DIR$/Assets/StarlinkUI/Scripts/Generic/Misc/Music.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/IBlock.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/View.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/ConnectionView.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/OverlayManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/SelectRoomView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/ScrollManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/EnterOverlayManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/AppData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/DrawingView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/DrawingManage.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/ApplicationData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Room.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/DrawingSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Drawable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/TcpManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/ApplicationManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/ConnectionView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Drawable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/DrawingManage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/DrawingSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/DrawingView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/EnterOverlayManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/IView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/NetworkEventType.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/NetworkManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PacketInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Room.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/ScrollManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/SelectRoomView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/TcpManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/WarningOverlayManager.cs" />
       </list>
     </option>
@@ -158,6 +189,7 @@
       <workItem from="1575568497220" duration="3550000" />
       <workItem from="1575695348498" duration="9847000" />
       <workItem from="1575726887423" duration="1894000" />
+      <workItem from="1575813233302" duration="4162000" />
     </task>
     <servers />
   </component>

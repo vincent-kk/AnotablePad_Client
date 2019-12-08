@@ -1,8 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// 방에 입장할때 등장하는 모달을 정의한다.
+/// 오버레이 매니저는 Disable되지 않고 이벤트를 통지받아서 모달을 생성한다.
+/// </summary>
 public class EnterOverlayManager : MonoBehaviour
 {
     [SerializeField] private GameObject modal;

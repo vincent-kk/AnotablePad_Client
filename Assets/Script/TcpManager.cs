@@ -1,13 +1,10 @@
 using System;
-using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using UnityEngine;
 
 public class TcpManager : MonoBehaviour
 {
-    private Socket _listener = null;
-
     // 클라이언트와의 접속용 소켓.
     private Socket _socket = null;
 
@@ -24,15 +21,10 @@ public class TcpManager : MonoBehaviour
 
     public bool isConnected => _isConnected;
 
-    //
-    // 이벤트 관련 멤버 변수.
-    //
-
     // 이벤트 통지 델리게이트.
     public delegate void EventHandler();
 
     private EventHandler _handler;
-
 
     private bool _threadLoop = false;
 
@@ -53,11 +45,6 @@ public class TcpManager : MonoBehaviour
     public bool Connect(string address, int port)
     {
         Debug.Log("TransportTCP connect called.");
-
-        if (_listener != null)
-        {
-            return false;
-        }
 
         bool ret = false;
         try
